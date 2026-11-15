@@ -5,7 +5,7 @@
   "roadmapVersion": 1,
   "planVerified": true,
   "plannedPrCount": 67,
-  "observedAt": "2026-11-15T19:37:52Z",
+  "observedAt": "2026-11-15T19:38:21Z",
   "sourceFiles": [
     "docs/DEVELOPMENT_PLAN.md",
     "AGENTS.md",
@@ -2106,7 +2106,9 @@
       "id": "SME-066",
       "title": "Load accessibility contract tests",
       "origin": "original",
-      "prs": [],
+      "prs": [
+        72
+      ],
       "priority": "P1",
       "phase": "Operations",
       "dependsOn": [
@@ -3094,6 +3096,20 @@
       "updatedAt": "2026-11-15T19:35:37Z",
       "mergedAt": "2026-11-15T19:35:37Z",
       "closedAt": "2026-11-15T19:35:37Z",
+      "draft": false
+    },
+    {
+      "number": 72,
+      "unitId": "SME-066",
+      "state": "open",
+      "merged": false,
+      "id": 5326407282,
+      "title": "SME-066: Add load, accessibility and contract conformance tests",
+      "url": "https://github.com/neophilism/Services-Marketplace-Engine/pull/72",
+      "createdAt": "2026-11-15T19:38:19Z",
+      "updatedAt": "2026-11-15T19:38:19Z",
+      "mergedAt": null,
+      "closedAt": null,
       "draft": false
     }
   ]
