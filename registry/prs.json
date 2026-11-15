@@ -5,7 +5,7 @@
   "roadmapVersion": 1,
   "planVerified": true,
   "plannedPrCount": 67,
-  "observedAt": "2026-11-15T19:22:14Z",
+  "observedAt": "2026-11-15T19:22:33Z",
   "sourceFiles": [
     "docs/DEVELOPMENT_PLAN.md",
     "AGENTS.md",
@@ -2009,7 +2009,9 @@
       "id": "SME-063",
       "title": "Data privacy exports retention deletion",
       "origin": "original",
-      "prs": [],
+      "prs": [
+        68
+      ],
       "priority": "P1",
       "phase": "Operations",
       "dependsOn": [
@@ -2999,6 +3001,20 @@
       "updatedAt": "2026-11-15T19:21:27Z",
       "mergedAt": "2026-11-15T19:21:27Z",
       "closedAt": "2026-11-15T19:21:27Z",
+      "draft": false
+    },
+    {
+      "number": 68,
+      "unitId": "SME-063",
+      "state": "open",
+      "merged": false,
+      "id": 5326267688,
+      "title": "SME-063: Add privacy exports, retention and deletion planning",
+      "url": "https://github.com/neophilism/Services-Marketplace-Engine/pull/68",
+      "createdAt": "2026-11-15T19:22:32Z",
+      "updatedAt": "2026-11-15T19:22:32Z",
+      "mergedAt": null,
+      "closedAt": null,
       "draft": false
     }
   ]
