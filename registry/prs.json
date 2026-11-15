@@ -5,7 +5,7 @@
   "roadmapVersion": 1,
   "planVerified": true,
   "plannedPrCount": 67,
-  "observedAt": "2026-11-15T19:34:13Z",
+  "observedAt": "2026-11-15T19:38:21Z",
   "sourceFiles": [
     "docs/DEVELOPMENT_PLAN.md",
     "AGENTS.md",
@@ -2093,25 +2093,35 @@
       ],
       "contributingPrs": [],
       "externalDependencies": [],
-      "externalPrerequisites": []
+      "externalPrerequisites": [],
+      "status": "merged",
+      "mergedCommit": "5e9ce00178b5615a1690b3d85e9196c9f45b845d",
+      "acceptanceEvidence": [
+        "Exact-head Registry validation push run 43753165942 and pull-request run 43753172332 passed for a906168d955afc1531b1fb5526bc93e63369042e.",
+        "Merged-main Registry validation run 43753298961 passed for 5e9ce00178b5615a1690b3d85e9196c9f45b845d.",
+        "https://github.com/neophilism/Services-Marketplace-Engine/pull/71"
+      ]
     },
     {
       "id": "SME-066",
       "title": "Load accessibility contract tests",
       "origin": "original",
-      "prs": [],
+      "prs": [
+        72
+      ],
       "priority": "P1",
       "phase": "Operations",
       "dependsOn": [
         "SME-065"
       ],
       "scope": [
-        "Load accessibility contract tests"
+        "Concurrent load regression test for the HTTP service.",
+        "Static WCAG-oriented accessibility audit applied to the status page and notification templates.",
+        "Contract conformance between the route table, the published OpenAPI document, live responses and the generated SDK validator."
       ],
       "acceptanceCriteria": "Complete load accessibility contract tests functionality, contract and authorization-negative tests, documentation, and recorded acceptance evidence.",
       "verification": [
-        "Automated tests and acceptance evidence",
-        "Regression tests"
+        "tests/load.test.mjs, tests/accessibility.test.mjs and tests/contract-conformance.test.mjs run in CI on every change."
       ],
       "contributingPrs": [],
       "externalDependencies": [],
@@ -3077,13 +3087,27 @@
     {
       "number": 71,
       "unitId": "SME-065",
-      "state": "open",
-      "merged": false,
+      "state": "closed",
+      "merged": true,
       "id": 5326372248,
       "title": "SME-065: Add STRIDE threat model and HTTP security tests",
       "url": "https://github.com/neophilism/Services-Marketplace-Engine/pull/71",
       "createdAt": "2026-11-15T19:34:12Z",
-      "updatedAt": "2026-11-15T19:34:12Z",
+      "updatedAt": "2026-11-15T19:35:37Z",
+      "mergedAt": "2026-11-15T19:35:37Z",
+      "closedAt": "2026-11-15T19:35:37Z",
+      "draft": false
+    },
+    {
+      "number": 72,
+      "unitId": "SME-066",
+      "state": "open",
+      "merged": false,
+      "id": 5326407282,
+      "title": "SME-066: Add load, accessibility and contract conformance tests",
+      "url": "https://github.com/neophilism/Services-Marketplace-Engine/pull/72",
+      "createdAt": "2026-11-15T19:38:19Z",
+      "updatedAt": "2026-11-15T19:38:19Z",
       "mergedAt": null,
       "closedAt": null,
       "draft": false
