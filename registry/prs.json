@@ -5,7 +5,7 @@
   "roadmapVersion": 1,
   "planVerified": true,
   "plannedPrCount": 67,
-  "observedAt": "2026-11-15T19:12:56Z",
+  "observedAt": "2026-11-15T19:15:54Z",
   "sourceFiles": [
     "docs/DEVELOPMENT_PLAN.md",
     "AGENTS.md",
@@ -1898,25 +1898,36 @@
       ],
       "contributingPrs": [],
       "externalDependencies": [],
-      "externalPrerequisites": []
+      "externalPrerequisites": [],
+      "status": "merged",
+      "mergedCommit": "d9fc4a233a8a16b75cca6940b1d58cfb7986add7",
+      "acceptanceEvidence": [
+        "Exact-head Registry validation push run 43751171887 and pull-request run 43751179575 passed for b0c44360d30c3a9cfabed76367d36f4dc453ffd1.",
+        "Merged-main Registry validation run 43751275008 passed for d9fc4a233a8a16b75cca6940b1d58cfb7986add7.",
+        "https://github.com/neophilism/Services-Marketplace-Engine/pull/64"
+      ]
     },
     {
       "id": "SME-060",
       "title": "Conversational request drafts approvals",
       "origin": "original",
-      "prs": [],
+      "prs": [
+        65
+      ],
       "priority": "P1",
       "phase": "Operations",
       "dependsOn": [
         "SME-059"
       ],
       "scope": [
-        "Conversational request drafts approvals"
+        "Structured service-request drafts from conversations against declared field specifications.",
+        "Labelled extraction source (AI provider or deterministic fallback) with a deterministic customer-only extractor.",
+        "Owner-only, single-use, expiring approval that never submits a lead by itself."
       ],
       "acceptanceCriteria": "Complete conversational request drafts approvals functionality, contract and authorization-negative tests, documentation, and recorded acceptance evidence.",
       "verification": [
-        "Automated tests and acceptance evidence",
-        "Regression tests"
+        "Contract tests cover deterministic extraction, draft creation, replay, approval, rejection and expiry.",
+        "Negative tests cover contaminated extraction, unlabelled sources, missing customer turns, incomplete approval, other customers, missing tenant, cross-tenant, missing permission and inactive membership."
       ],
       "contributingPrs": [],
       "externalDependencies": [],
@@ -2907,13 +2918,27 @@
     {
       "number": 64,
       "unitId": "SME-059",
-      "state": "open",
-      "merged": false,
+      "state": "closed",
+      "merged": true,
       "id": 5326174688,
       "title": "SME-059: Add retrieval grounding and reviewed corrections",
       "url": "https://github.com/neophilism/Services-Marketplace-Engine/pull/64",
       "createdAt": "2026-11-15T19:12:54Z",
-      "updatedAt": "2026-11-15T19:12:54Z",
+      "updatedAt": "2026-11-15T19:14:07Z",
+      "mergedAt": "2026-11-15T19:14:07Z",
+      "closedAt": "2026-11-15T19:14:07Z",
+      "draft": false
+    },
+    {
+      "number": 65,
+      "unitId": "SME-060",
+      "state": "open",
+      "merged": false,
+      "id": 5326204246,
+      "title": "SME-060: Add conversational request drafts with customer approval",
+      "url": "https://github.com/neophilism/Services-Marketplace-Engine/pull/65",
+      "createdAt": "2026-11-15T19:15:53Z",
+      "updatedAt": "2026-11-15T19:15:53Z",
       "mergedAt": null,
       "closedAt": null,
       "draft": false
