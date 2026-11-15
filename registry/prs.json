@@ -5,7 +5,7 @@
   "roadmapVersion": 1,
   "planVerified": true,
   "plannedPrCount": 67,
-  "observedAt": "2026-11-15T19:25:25Z",
+  "observedAt": "2026-11-15T19:25:39Z",
   "sourceFiles": [
     "docs/DEVELOPMENT_PLAN.md",
     "AGENTS.md",
@@ -2042,7 +2042,9 @@
       "id": "SME-064",
       "title": "Monitoring alerts incidents",
       "origin": "original",
-      "prs": [],
+      "prs": [
+        69
+      ],
       "priority": "P1",
       "phase": "Operations",
       "dependsOn": [
@@ -3023,6 +3025,20 @@
       "updatedAt": "2026-11-15T19:24:49Z",
       "mergedAt": "2026-11-15T19:24:49Z",
       "closedAt": "2026-11-15T19:24:49Z",
+      "draft": false
+    },
+    {
+      "number": 69,
+      "unitId": "SME-064",
+      "state": "open",
+      "merged": false,
+      "id": 5326296801,
+      "title": "SME-064: Add monitoring alerts and incident lifecycle",
+      "url": "https://github.com/neophilism/Services-Marketplace-Engine/pull/69",
+      "createdAt": "2026-11-15T19:25:38Z",
+      "updatedAt": "2026-11-15T19:25:38Z",
+      "mergedAt": null,
+      "closedAt": null,
       "draft": false
     }
   ]
