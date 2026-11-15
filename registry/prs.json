@@ -5,7 +5,7 @@
   "roadmapVersion": 1,
   "planVerified": true,
   "plannedPrCount": 67,
-  "observedAt": "2026-11-15T19:02:59Z",
+  "observedAt": "2026-11-15T19:03:19Z",
   "sourceFiles": [
     "docs/DEVELOPMENT_PLAN.md",
     "AGENTS.md",
@@ -1844,7 +1844,9 @@
       "id": "SME-058",
       "title": "Public professional research sourcing",
       "origin": "original",
-      "prs": [],
+      "prs": [
+        63
+      ],
       "priority": "P1",
       "phase": "Operations",
       "dependsOn": [
@@ -2875,6 +2877,20 @@
       "updatedAt": "2026-11-04T23:28:02Z",
       "mergedAt": "2026-11-04T23:28:02Z",
       "closedAt": "2026-11-04T23:28:02Z",
+      "draft": false
+    },
+    {
+      "number": 63,
+      "unitId": "SME-058",
+      "state": "open",
+      "merged": false,
+      "id": 5326085859,
+      "title": "SME-058: Add public professional research sourcing",
+      "url": "https://github.com/neophilism/Services-Marketplace-Engine/pull/63",
+      "createdAt": "2026-11-15T19:03:18Z",
+      "updatedAt": "2026-11-15T19:03:18Z",
+      "mergedAt": null,
+      "closedAt": null,
       "draft": false
     }
   ]
