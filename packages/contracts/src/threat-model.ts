@@ -46,7 +46,7 @@ export const THREAT_MODEL: readonly ThreatEntry[] = Object.freeze([
   {threatId: 'T-06', category: 'denial-of-service', asset: 'API availability',
     threat: 'Oversized bodies, slow requests or bursts exhaust the free-tier instance.',
     mitigations: ['256 KiB body cap', 'request timeout', 'per-credential token-bucket rate limit'],
-    tests: ['tests/http-security.test.mjs'], residualRisk: 'medium'},
+    tests: ['tests/http-security.test.mjs', 'tests/load.test.mjs'], residualRisk: 'medium'},
   {threatId: 'T-07', category: 'information-disclosure', asset: 'Internal network',
     threat: 'Server-side request forgery through research source or webhook URLs.',
     mitigations: ['HTTPS-only public hostnames', 'literal IPs, localhost and internal suffixes refused'],

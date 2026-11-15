@@ -1,0 +1,5 @@
+# Load, accessibility and contract tests (SME-066)
+
+- `tests/load.test.mjs` sends 600 concurrent mixed reads and writes (health, provider reads, customer creates, racing consent appends) to the in-memory service and requires zero 5xx, all creates succeeding, a valid consent chain after the race, and elapsed and p95 budgets. It is a regression guard for serialization and concurrency bugs, not a capacity test of production.
+- `tests/accessibility.test.mjs` runs `auditHtmlAccessibility` (lang, title, main landmark, one h1, heading order, image alt, form labels, button and link names, zoom, 4.5:1 text contrast) on the service status page, checks the auditor catches each failure, and verifies notification templates are plain text with descriptive links.
+- `tests/contract-conformance.test.mjs` requires `contracts/openapi.json` to equal the document generated from the live route table, checks every public route documents security, error responses, required permission and domain rejection code, and validates live responses with both the server validator and the generated SDK validator.

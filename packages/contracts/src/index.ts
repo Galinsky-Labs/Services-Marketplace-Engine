@@ -104,3 +104,4 @@ export * from './data-privacy.js';
 export * from './monitoring.js';
 export * from './security-policy.js';
 export * from './threat-model.js';
+export * from './accessibility-audit.js';
