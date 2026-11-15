@@ -96,3 +96,4 @@ export * from './knowledge-base.js';
 export * from './ai-gateway.js';
 export * from './assistant-registry.js';
 export * from './research-sourcing.js';
+export * from './retrieval-grounding.js';
