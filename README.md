@@ -23,3 +23,7 @@ Fail-closed tenancy authorization audit events are documented in `docs/AUDIT_LOG
 Tenant-scoped idempotent outbox delivery and leased retry behavior are documented in `docs/OUTBOX.md`.
 
 Quarantined object storage and verified attachment scanning are documented in `docs/ATTACHMENTS.md`.
+
+## Running the service
+
+`apps/api` is a deployable HTTP service (see `docs/API_SERVER.md`). Locally: `npm ci && npm run build`, then `DATABASE_URL=postgres://... PLATFORM_ADMIN_TOKEN=smeadmin_<64 hex> npm start` (without `DATABASE_URL` it runs on volatile in-memory storage). Migrations run at startup. Health: `GET /health`; readiness: `GET /ready`; contract: `GET /openapi.json`. Production rollout, backup and disaster recovery are described in `docs/PRODUCTION_ROLLOUT.md`, and the threat model in `docs/THREAT_MODEL.md`.

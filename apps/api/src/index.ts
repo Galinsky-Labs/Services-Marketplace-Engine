@@ -40,3 +40,23 @@ export async function handleResourceRead(
     body: {id: resource.id, organizationId: authorization.organizationId},
   };
 }
+
+export {createApp, createMemoryApp, createAdapters, configFromEnv, componentSchemas, buildRoutes, createServicesWith,
+  API_VERSION, PUBLIC_SERVER_URL} from './create-app.js';
+export {buildOpenApiDocument} from './openapi.js';
+export {createHttpServer, createApiHandler} from './http/server.js';
+export {validateSchema} from './http/schema.js';
+export {MemoryDocumentStore, PostgresDocumentStore, canonicalJson} from './store/documents.js';
+export {MemoryIdentityRepository, PostgresIdentityRepository} from './store/identity.js';
+export {runMigrations, discoverMigrations} from './db/migrate.js';
+export {issueApiKey, authenticate, sha256Hex} from './auth.js';
+export {
+  AnthropicAIProvider, DeterministicAIProvider, answerFromChunks, extractDraftFields,
+  DETERMINISTIC_FALLBACK_LABEL,
+} from './adapters/ai.js';
+export {StripeConnectAdapter, verifyStripeSignature} from './adapters/stripe.js';
+export {HttpCredentialCheckAdapter} from './adapters/credential-check.js';
+export {HttpEsignAdapter, esignEventPayload} from './adapters/esign.js';
+export {ResendEmailAdapter, TwilioSmsAdapter, ExpoPushAdapter, renderTemplate} from './adapters/notifications.js';
+export {S3QuarantineObjectStore, presignS3Url} from './adapters/object-storage.js';
+export {renderStatusPage, adapterStatuses, PERMISSION_CATALOG, STATUS_PAGE_COLORS} from './routes/platform.js';
