@@ -5,7 +5,7 @@
   "roadmapVersion": 1,
   "planVerified": true,
   "plannedPrCount": 67,
-  "observedAt": "2026-11-15T19:28:05Z",
+  "observedAt": "2026-11-15T19:28:24Z",
   "sourceFiles": [
     "docs/DEVELOPMENT_PLAN.md",
     "AGENTS.md",
@@ -2118,7 +2118,9 @@
       "id": "SME-067",
       "title": "Production rollout DR release certification",
       "origin": "original",
-      "prs": [],
+      "prs": [
+        70
+      ],
       "priority": "P1",
       "phase": "Operations",
       "dependsOn": [
@@ -3050,6 +3052,20 @@
       "updatedAt": "2026-11-15T19:27:24Z",
       "mergedAt": "2026-11-15T19:27:24Z",
       "closedAt": "2026-11-15T19:27:24Z",
+      "draft": false
+    },
+    {
+      "number": 70,
+      "unitId": "SME-067",
+      "state": "open",
+      "merged": false,
+      "id": 5326320823,
+      "title": "SME-067: Add deployable HTTP API service, Postgres persistence and adapters",
+      "url": "https://github.com/neophilism/Services-Marketplace-Engine/pull/70",
+      "createdAt": "2026-11-15T19:28:23Z",
+      "updatedAt": "2026-11-15T19:28:23Z",
+      "mergedAt": null,
+      "closedAt": null,
       "draft": false
     }
   ]
