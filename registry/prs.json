@@ -5,7 +5,7 @@
   "roadmapVersion": 1,
   "planVerified": true,
   "plannedPrCount": 67,
-  "observedAt": "2026-11-15T12:00:00Z",
+  "observedAt": "2026-11-15T19:02:59Z",
   "sourceFiles": [
     "docs/DEVELOPMENT_PLAN.md",
     "AGENTS.md",
@@ -1851,12 +1851,15 @@
         "SME-057"
       ],
       "scope": [
-        "Public professional research sourcing"
+        "Tenant-scoped, revisioned registry of public professional research sources with licence basis, path prefixes and retention.",
+        "Cited, unverified provider findings bound to registered HTTPS sources, content digests and bounded, identifier-free excerpts.",
+        "SSRF-safe public hostname rules and expiry-aware finding selection."
       ],
       "acceptanceCriteria": "Complete public professional research sourcing functionality, contract and authorization-negative tests, documentation, and recorded acceptance evidence.",
       "verification": [
-        "Automated tests and acceptance evidence",
-        "Regression tests"
+        "Contract tests cover source registration, revision, exact replay, finding capture, expiry and tenant-bound selection.",
+        "Authorization-negative tests cover missing tenant, cross-tenant, wrong permission, inactive membership, inactive operator and audit failure.",
+        "Negative tests cover private-network, credentialed, non-HTTPS and non-default-port URLs, disallowed paths, traversal, personal identifiers, stale retrieval, unknown providers, retired sources and stale revisions."
       ],
       "contributingPrs": [],
       "externalDependencies": [],
