@@ -5,7 +5,7 @@
   "roadmapVersion": 1,
   "planVerified": true,
   "plannedPrCount": 67,
-  "observedAt": "2026-11-15T19:33:45Z",
+  "observedAt": "2026-11-15T19:34:13Z",
   "sourceFiles": [
     "docs/DEVELOPMENT_PLAN.md",
     "AGENTS.md",
@@ -2074,7 +2074,9 @@
       "id": "SME-065",
       "title": "Threat modeling security tests",
       "origin": "original",
-      "prs": [],
+      "prs": [
+        71
+      ],
       "priority": "P1",
       "phase": "Operations",
       "dependsOn": [
@@ -3070,6 +3072,20 @@
       "updatedAt": "2026-11-15T19:31:24Z",
       "mergedAt": "2026-11-15T19:31:24Z",
       "closedAt": "2026-11-15T19:31:24Z",
+      "draft": false
+    },
+    {
+      "number": 71,
+      "unitId": "SME-065",
+      "state": "open",
+      "merged": false,
+      "id": 5326372248,
+      "title": "SME-065: Add STRIDE threat model and HTTP security tests",
+      "url": "https://github.com/neophilism/Services-Marketplace-Engine/pull/71",
+      "createdAt": "2026-11-15T19:34:12Z",
+      "updatedAt": "2026-11-15T19:34:12Z",
+      "mergedAt": null,
+      "closedAt": null,
       "draft": false
     }
   ]
