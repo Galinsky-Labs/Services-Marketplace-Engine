@@ -5,7 +5,7 @@
   "roadmapVersion": 1,
   "planVerified": true,
   "plannedPrCount": 67,
-  "observedAt": "2026-11-15T19:18:45Z",
+  "observedAt": "2026-11-15T19:20:33Z",
   "sourceFiles": [
     "docs/DEVELOPMENT_PLAN.md",
     "AGENTS.md",
@@ -1963,25 +1963,36 @@
       ],
       "contributingPrs": [],
       "externalDependencies": [],
-      "externalPrerequisites": []
+      "externalPrerequisites": [],
+      "status": "merged",
+      "mergedCommit": "d71dbcedab754926d586c2cd49cac8c2f918ccc3",
+      "acceptanceEvidence": [
+        "Exact-head Registry validation push run 43751710276 and pull-request run 43751715638 passed for 01fa7492576ed154277dd53d69a1cfdb3dad4e3c.",
+        "Merged-main Registry validation run 43751777034 passed for d71dbcedab754926d586c2cd49cac8c2f918ccc3.",
+        "https://github.com/neophilism/Services-Marketplace-Engine/pull/66"
+      ]
     },
     {
       "id": "SME-062",
       "title": "Rights consent ledger",
       "origin": "original",
-      "prs": [],
+      "prs": [
+        67
+      ],
       "priority": "P1",
       "phase": "Operations",
       "dependsOn": [
         "SME-061"
       ],
       "scope": [
-        "Rights consent ledger"
+        "Append-only SHA-256 hash-chained consent ledger per tenant subject and purpose.",
+        "Self-service recording plus staff recording on behalf of subjects through the support channel only.",
+        "Fail-closed consent evaluation with optional notice-version requirements."
       ],
       "acceptanceCriteria": "Complete rights consent ledger functionality, contract and authorization-negative tests, documentation, and recorded acceptance evidence.",
       "verification": [
-        "Automated tests and acceptance evidence",
-        "Regression tests"
+        "Contract tests cover chained appends, replay, chain verification and point-in-time evaluation.",
+        "Negative tests cover tampering, missing entries, cross-tenant chains, on-behalf recording without consent:manage or support channel, missing tenant, cross-tenant, missing permission, inactive membership, unknown purposes and concurrent append conflicts."
       ],
       "contributingPrs": [],
       "externalDependencies": [],
@@ -2956,13 +2967,27 @@
     {
       "number": 66,
       "unitId": "SME-061",
-      "state": "open",
-      "merged": false,
+      "state": "closed",
+      "merged": true,
       "id": 5326232498,
       "title": "SME-061: Add multi-agent turn director disabled by default",
       "url": "https://github.com/neophilism/Services-Marketplace-Engine/pull/66",
       "createdAt": "2026-11-15T19:18:44Z",
-      "updatedAt": "2026-11-15T19:18:44Z",
+      "updatedAt": "2026-11-15T19:19:28Z",
+      "mergedAt": "2026-11-15T19:19:28Z",
+      "closedAt": "2026-11-15T19:19:28Z",
+      "draft": false
+    },
+    {
+      "number": 67,
+      "unitId": "SME-062",
+      "state": "open",
+      "merged": false,
+      "id": 5326249590,
+      "title": "SME-062: Add hash-chained rights consent ledger",
+      "url": "https://github.com/neophilism/Services-Marketplace-Engine/pull/67",
+      "createdAt": "2026-11-15T19:20:31Z",
+      "updatedAt": "2026-11-15T19:20:31Z",
       "mergedAt": null,
       "closedAt": null,
       "draft": false
