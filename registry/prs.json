@@ -5,7 +5,7 @@
   "roadmapVersion": 1,
   "planVerified": true,
   "plannedPrCount": 67,
-  "observedAt": "2026-11-15T19:28:24Z",
+  "observedAt": "2026-11-15T19:34:13Z",
   "sourceFiles": [
     "docs/DEVELOPMENT_PLAN.md",
     "AGENTS.md",
@@ -2074,19 +2074,22 @@
       "id": "SME-065",
       "title": "Threat modeling security tests",
       "origin": "original",
-      "prs": [],
+      "prs": [
+        71
+      ],
       "priority": "P1",
       "phase": "Operations",
       "dependsOn": [
         "SME-064"
       ],
       "scope": [
-        "Threat modeling security tests"
+        "Machine-readable STRIDE threat model with mitigations, residual risk and linked tests.",
+        "HTTP security tests for authentication, tenant isolation, privilege boundaries, input hardening, error disclosure, rate limiting, security headers and CORS."
       ],
       "acceptanceCriteria": "Complete threat modeling security tests functionality, contract and authorization-negative tests, documentation, and recorded acceptance evidence.",
       "verification": [
-        "Automated tests and acceptance evidence",
-        "Regression tests"
+        "tests/threat-model.test.mjs requires every STRIDE category, mitigations, existing test files and documentation of every threat id.",
+        "tests/http-security.test.mjs exercises the running HTTP service for each mitigation."
       ],
       "contributingPrs": [],
       "externalDependencies": [],
@@ -2140,7 +2143,10 @@
       ],
       "contributingPrs": [],
       "externalDependencies": [],
-      "externalPrerequisites": []
+      "externalPrerequisites": [],
+      "implementationEvidence": [
+        "Exact-head Registry validation push run 43752609149 and pull-request run 43752616667 passed for f0c6f5aeb398f7ca3629877993446d440881cb3c. Merged-main Registry validation run 43752894271 passed for 4064fb90dcd1f16ac8d853b7b7a545c7f066a9e9. https://github.com/neophilism/Services-Marketplace-Engine/pull/70"
+      ]
     }
   ],
   "pullRequests": [
@@ -3057,13 +3063,27 @@
     {
       "number": 70,
       "unitId": "SME-067",
-      "state": "open",
-      "merged": false,
+      "state": "closed",
+      "merged": true,
       "id": 5326320823,
       "title": "SME-067: Add deployable HTTP API service, Postgres persistence and adapters",
       "url": "https://github.com/neophilism/Services-Marketplace-Engine/pull/70",
       "createdAt": "2026-11-15T19:28:23Z",
-      "updatedAt": "2026-11-15T19:28:23Z",
+      "updatedAt": "2026-11-15T19:31:24Z",
+      "mergedAt": "2026-11-15T19:31:24Z",
+      "closedAt": "2026-11-15T19:31:24Z",
+      "draft": false
+    },
+    {
+      "number": 71,
+      "unitId": "SME-065",
+      "state": "open",
+      "merged": false,
+      "id": 5326372248,
+      "title": "SME-065: Add STRIDE threat model and HTTP security tests",
+      "url": "https://github.com/neophilism/Services-Marketplace-Engine/pull/71",
+      "createdAt": "2026-11-15T19:34:12Z",
+      "updatedAt": "2026-11-15T19:34:12Z",
       "mergedAt": null,
       "closedAt": null,
       "draft": false
