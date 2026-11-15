@@ -103,3 +103,4 @@ export * from './consent-ledger.js';
 export * from './data-privacy.js';
 export * from './monitoring.js';
 export * from './security-policy.js';
+export * from './threat-model.js';
