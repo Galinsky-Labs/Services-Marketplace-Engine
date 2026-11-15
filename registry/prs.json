@@ -5,7 +5,7 @@
   "roadmapVersion": 1,
   "planVerified": true,
   "plannedPrCount": 67,
-  "observedAt": "2026-11-15T19:03:19Z",
+  "observedAt": "2026-11-15T19:12:56Z",
   "sourceFiles": [
     "docs/DEVELOPMENT_PLAN.md",
     "AGENTS.md",
@@ -1865,25 +1865,36 @@
       ],
       "contributingPrs": [],
       "externalDependencies": [],
-      "externalPrerequisites": []
+      "externalPrerequisites": [],
+      "status": "merged",
+      "mergedCommit": "a87dc35e173545677fda87971c6a068c31ce2561",
+      "acceptanceEvidence": [
+        "Exact-head Registry validation push run 43750223772 and pull-request run 43750230404 passed for cd54e8ae9a9a4eb8f4287f80237aa22b044e4755.",
+        "Merged-main Registry validation run 43751020041 passed for a87dc35e173545677fda87971c6a068c31ce2561.",
+        "https://github.com/neophilism/Services-Marketplace-Engine/pull/63"
+      ]
     },
     {
       "id": "SME-059",
       "title": "Retrieval grounding corrections",
       "origin": "original",
-      "prs": [],
+      "prs": [
+        64
+      ],
       "priority": "P1",
       "phase": "Operations",
       "dependsOn": [
         "SME-058"
       ],
       "scope": [
-        "Retrieval grounding corrections"
+        "Deterministic BM25 retrieval over published tenant knowledge chunks.",
+        "Verbatim citation verification with grounded, partially grounded and ungrounded verdicts and coverage.",
+        "Correction submissions and separately reviewed decisions that suppress chunks from retrieval."
       ],
       "acceptanceCriteria": "Complete retrieval grounding corrections functionality, contract and authorization-negative tests, documentation, and recorded acceptance evidence.",
       "verification": [
-        "Automated tests and acceptance evidence",
-        "Regression tests"
+        "Contract tests cover tenant-bound deterministic ranking, verdicts, rejection reasons, suppression and the correction lifecycle with replay.",
+        "Authorization-negative tests cover missing tenant, cross-tenant, missing permission, inactive membership, cross-tenant chunks, self-review and persistence failure."
       ],
       "contributingPrs": [],
       "externalDependencies": [],
@@ -2882,13 +2893,27 @@
     {
       "number": 63,
       "unitId": "SME-058",
-      "state": "open",
-      "merged": false,
+      "state": "closed",
+      "merged": true,
       "id": 5326085859,
       "title": "SME-058: Add public professional research sourcing",
       "url": "https://github.com/neophilism/Services-Marketplace-Engine/pull/63",
       "createdAt": "2026-11-15T19:03:18Z",
-      "updatedAt": "2026-11-15T19:03:18Z",
+      "updatedAt": "2026-11-15T19:11:22Z",
+      "mergedAt": "2026-11-15T19:11:22Z",
+      "closedAt": "2026-11-15T19:11:22Z",
+      "draft": false
+    },
+    {
+      "number": 64,
+      "unitId": "SME-059",
+      "state": "open",
+      "merged": false,
+      "id": 5326174688,
+      "title": "SME-059: Add retrieval grounding and reviewed corrections",
+      "url": "https://github.com/neophilism/Services-Marketplace-Engine/pull/64",
+      "createdAt": "2026-11-15T19:12:54Z",
+      "updatedAt": "2026-11-15T19:12:54Z",
       "mergedAt": null,
       "closedAt": null,
       "draft": false
