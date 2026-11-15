@@ -5,7 +5,7 @@
   "roadmapVersion": 1,
   "planVerified": true,
   "plannedPrCount": 67,
-  "observedAt": "2026-11-15T19:20:33Z",
+  "observedAt": "2026-11-15T19:22:33Z",
   "sourceFiles": [
     "docs/DEVELOPMENT_PLAN.md",
     "AGENTS.md",
@@ -1996,25 +1996,36 @@
       ],
       "contributingPrs": [],
       "externalDependencies": [],
-      "externalPrerequisites": []
+      "externalPrerequisites": [],
+      "status": "merged",
+      "mergedCommit": "60dfc0cc8971227113907e61eda5ab722a8d4067",
+      "acceptanceEvidence": [
+        "Exact-head Registry validation push run 43751887446 and pull-request run 43751894191 passed for dfb021812c92b6c1f17c051fafeac5c93ff9e53e.",
+        "Merged-main Registry validation run 43751970550 passed for 60dfc0cc8971227113907e61eda5ab722a8d4067.",
+        "https://github.com/neophilism/Services-Marketplace-Engine/pull/67"
+      ]
     },
     {
       "id": "SME-063",
       "title": "Data privacy exports retention deletion",
       "origin": "original",
-      "prs": [],
+      "prs": [
+        68
+      ],
       "priority": "P1",
       "phase": "Operations",
       "dependsOn": [
         "SME-062"
       ],
       "scope": [
-        "Data privacy exports retention deletion"
+        "Privacy export and deletion requests with 30-day due dates and officer-only completion.",
+        "Subject exports with redaction of other subjects' identifiers.",
+        "Policy-driven retention and subject deletion plans honouring legal holds and statutory retention."
       ],
       "acceptanceCriteria": "Complete data privacy exports retention deletion functionality, contract and authorization-negative tests, documentation, and recorded acceptance evidence.",
       "verification": [
-        "Automated tests and acceptance evidence",
-        "Regression tests"
+        "Contract tests cover export contents and redaction, retention planning, deletion planning and the request lifecycle with replay.",
+        "Negative tests cover invalid policy sets, unmapped kinds, legal holds, non-officer completion, double completion, missing tenant, cross-tenant, on-behalf filing without privacy:manage, inactive membership and invalid kinds."
       ],
       "contributingPrs": [],
       "externalDependencies": [],
@@ -2981,13 +2992,27 @@
     {
       "number": 67,
       "unitId": "SME-062",
-      "state": "open",
-      "merged": false,
+      "state": "closed",
+      "merged": true,
       "id": 5326249590,
       "title": "SME-062: Add hash-chained rights consent ledger",
       "url": "https://github.com/neophilism/Services-Marketplace-Engine/pull/67",
       "createdAt": "2026-11-15T19:20:31Z",
-      "updatedAt": "2026-11-15T19:20:31Z",
+      "updatedAt": "2026-11-15T19:21:27Z",
+      "mergedAt": "2026-11-15T19:21:27Z",
+      "closedAt": "2026-11-15T19:21:27Z",
+      "draft": false
+    },
+    {
+      "number": 68,
+      "unitId": "SME-063",
+      "state": "open",
+      "merged": false,
+      "id": 5326267688,
+      "title": "SME-063: Add privacy exports, retention and deletion planning",
+      "url": "https://github.com/neophilism/Services-Marketplace-Engine/pull/68",
+      "createdAt": "2026-11-15T19:22:32Z",
+      "updatedAt": "2026-11-15T19:22:32Z",
       "mergedAt": null,
       "closedAt": null,
       "draft": false

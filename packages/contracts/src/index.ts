@@ -100,3 +100,4 @@ export * from './retrieval-grounding.js';
 export * from './conversational-draft.js';
 export * from './turn-director.js';
 export * from './consent-ledger.js';
+export * from './data-privacy.js';
