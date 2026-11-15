@@ -5,7 +5,7 @@
   "roadmapVersion": 1,
   "planVerified": true,
   "plannedPrCount": 67,
-  "observedAt": "2026-11-15T19:12:19Z",
+  "observedAt": "2026-11-15T19:12:56Z",
   "sourceFiles": [
     "docs/DEVELOPMENT_PLAN.md",
     "AGENTS.md",
@@ -1878,7 +1878,9 @@
       "id": "SME-059",
       "title": "Retrieval grounding corrections",
       "origin": "original",
-      "prs": [],
+      "prs": [
+        64
+      ],
       "priority": "P1",
       "phase": "Operations",
       "dependsOn": [
@@ -2900,6 +2902,20 @@
       "updatedAt": "2026-11-15T19:11:22Z",
       "mergedAt": "2026-11-15T19:11:22Z",
       "closedAt": "2026-11-15T19:11:22Z",
+      "draft": false
+    },
+    {
+      "number": 64,
+      "unitId": "SME-059",
+      "state": "open",
+      "merged": false,
+      "id": 5326174688,
+      "title": "SME-059: Add retrieval grounding and reviewed corrections",
+      "url": "https://github.com/neophilism/Services-Marketplace-Engine/pull/64",
+      "createdAt": "2026-11-15T19:12:54Z",
+      "updatedAt": "2026-11-15T19:12:54Z",
+      "mergedAt": null,
+      "closedAt": null,
       "draft": false
     }
   ]
