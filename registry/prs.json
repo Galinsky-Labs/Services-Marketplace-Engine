@@ -5,7 +5,7 @@
   "roadmapVersion": 1,
   "planVerified": true,
   "plannedPrCount": 67,
-  "observedAt": "2026-11-15T19:22:33Z",
+  "observedAt": "2026-11-15T19:25:25Z",
   "sourceFiles": [
     "docs/DEVELOPMENT_PLAN.md",
     "AGENTS.md",
@@ -2029,7 +2029,14 @@
       ],
       "contributingPrs": [],
       "externalDependencies": [],
-      "externalPrerequisites": []
+      "externalPrerequisites": [],
+      "status": "merged",
+      "mergedCommit": "67dbb2e7477aab3542742a475f5f9f5339474d74",
+      "acceptanceEvidence": [
+        "Exact-head Registry validation push run 43752079503 and pull-request run 43752084935 passed for 6c4c50928e131d21071f7e6d10d6c601e0db21c4.",
+        "Merged-main Registry validation run 43752283390 passed for 67dbb2e7477aab3542742a475f5f9f5339474d74.",
+        "https://github.com/neophilism/Services-Marketplace-Engine/pull/68"
+      ]
     },
     {
       "id": "SME-064",
@@ -2042,12 +2049,13 @@
         "SME-063"
       ],
       "scope": [
-        "Monitoring alerts incidents"
+        "Threshold alert evaluation (avg, max, sum, p95, count) over trailing windows with sample minimums.",
+        "Tenant incidents with deduplication, commander assignment, timelines and postmortem-gated resolution."
       ],
       "acceptanceCriteria": "Complete monitoring alerts incidents functionality, contract and authorization-negative tests, documentation, and recorded acceptance evidence.",
       "verification": [
-        "Automated tests and acceptance evidence",
-        "Regression tests"
+        "Contract tests cover windows, sample minimums, severity ordering, invalid-rule alerts and the full incident lifecycle.",
+        "Negative tests cover missing postmortems, illegal transitions, stale revisions, missing tenant, cross-tenant, missing permission, inactive membership and invalid severities."
       ],
       "contributingPrs": [],
       "externalDependencies": [],
@@ -3006,15 +3014,15 @@
     {
       "number": 68,
       "unitId": "SME-063",
-      "state": "open",
-      "merged": false,
+      "state": "closed",
+      "merged": true,
       "id": 5326267688,
       "title": "SME-063: Add privacy exports, retention and deletion planning",
       "url": "https://github.com/neophilism/Services-Marketplace-Engine/pull/68",
       "createdAt": "2026-11-15T19:22:32Z",
-      "updatedAt": "2026-11-15T19:22:32Z",
-      "mergedAt": null,
-      "closedAt": null,
+      "updatedAt": "2026-11-15T19:24:49Z",
+      "mergedAt": "2026-11-15T19:24:49Z",
+      "closedAt": "2026-11-15T19:24:49Z",
       "draft": false
     }
   ]
