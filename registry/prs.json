@@ -5,7 +5,7 @@
   "roadmapVersion": 1,
   "planVerified": true,
   "plannedPrCount": 67,
-  "observedAt": "2026-11-15T19:18:30Z",
+  "observedAt": "2026-11-15T19:18:45Z",
   "sourceFiles": [
     "docs/DEVELOPMENT_PLAN.md",
     "AGENTS.md",
@@ -1944,7 +1944,9 @@
       "id": "SME-061",
       "title": "Multi-agent turn director disabled",
       "origin": "original",
-      "prs": [],
+      "prs": [
+        66
+      ],
       "priority": "P1",
       "phase": "Operations",
       "dependsOn": [
@@ -2949,6 +2951,20 @@
       "updatedAt": "2026-11-15T19:18:02Z",
       "mergedAt": "2026-11-15T19:18:02Z",
       "closedAt": "2026-11-15T19:18:02Z",
+      "draft": false
+    },
+    {
+      "number": 66,
+      "unitId": "SME-061",
+      "state": "open",
+      "merged": false,
+      "id": 5326232498,
+      "title": "SME-061: Add multi-agent turn director disabled by default",
+      "url": "https://github.com/neophilism/Services-Marketplace-Engine/pull/66",
+      "createdAt": "2026-11-15T19:18:44Z",
+      "updatedAt": "2026-11-15T19:18:44Z",
+      "mergedAt": null,
+      "closedAt": null,
       "draft": false
     }
   ]
