@@ -1,0 +1,10 @@
+DROP POLICY IF EXISTS tenant_document_keys ON marketplace.document_keys;
+DROP POLICY IF EXISTS tenant_documents ON marketplace.documents;
+DROP TABLE marketplace.document_keys;
+DROP TABLE marketplace.documents;
+DROP TABLE marketplace.audit_events;
+DROP TABLE marketplace.api_keys;
+DROP TABLE marketplace.roles;
+ALTER TABLE marketplace.memberships DROP COLUMN updated_at, DROP COLUMN role_ids;
+ALTER TABLE marketplace.organizations DROP COLUMN created_at, DROP COLUMN status;
+DELETE FROM marketplace.schema_migrations WHERE id = '0002_platform';

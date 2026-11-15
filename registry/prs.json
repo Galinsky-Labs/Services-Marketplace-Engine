@@ -5,7 +5,7 @@
   "roadmapVersion": 1,
   "planVerified": true,
   "plannedPrCount": 67,
-  "observedAt": "2026-11-15T19:25:39Z",
+  "observedAt": "2026-11-15T19:28:24Z",
   "sourceFiles": [
     "docs/DEVELOPMENT_PLAN.md",
     "AGENTS.md",
@@ -2061,7 +2061,14 @@
       ],
       "contributingPrs": [],
       "externalDependencies": [],
-      "externalPrerequisites": []
+      "externalPrerequisites": [],
+      "status": "merged",
+      "mergedCommit": "1a797842642d83dca04c6df84bd69129d4cf24f1",
+      "acceptanceEvidence": [
+        "Exact-head Registry validation push run 43752364828 and pull-request run 43752369056 passed for eb53b441a07045a6559892fefccc8d052000ff47.",
+        "Merged-main Registry validation run 43752518823 passed for 1a797842642d83dca04c6df84bd69129d4cf24f1.",
+        "https://github.com/neophilism/Services-Marketplace-Engine/pull/69"
+      ]
     },
     {
       "id": "SME-065",
@@ -2111,19 +2118,25 @@
       "id": "SME-067",
       "title": "Production rollout DR release certification",
       "origin": "original",
-      "prs": [],
+      "prs": [
+        70
+      ],
       "priority": "P1",
       "phase": "Operations",
       "dependsOn": [
         "SME-066"
       ],
       "scope": [
-        "Production rollout DR release certification"
+        "Deployable HTTP API server with API-key authentication, RBAC gating, health and readiness.",
+        "Postgres identity tables and tenant document store with forced row-level security; migrations applied by the node driver at startup.",
+        "Generated OpenAPI document and SDK; provider adapters (Stripe Connect, background checks, e-sign, email, SMS, push, object storage, AI) disabled without configuration.",
+        "Render web service and Neon Postgres production rollout with backup and disaster-recovery runbook."
       ],
       "acceptanceCriteria": "Complete production rollout dr release certification functionality, contract and authorization-negative tests, documentation, and recorded acceptance evidence.",
       "verification": [
-        "Automated tests and acceptance evidence",
-        "Regression tests"
+        "HTTP API, adapter and Postgres repository tests run in CI (Postgres tests in the database job).",
+        "Deployment evidence: Render deploy status and health-check logs recorded in docs/PRODUCTION_ROLLOUT.md.",
+        "Release certification (signed tag, independent review, authorized signoff) is not yet complete."
       ],
       "contributingPrs": [],
       "externalDependencies": [],
@@ -3030,13 +3043,27 @@
     {
       "number": 69,
       "unitId": "SME-064",
-      "state": "open",
-      "merged": false,
+      "state": "closed",
+      "merged": true,
       "id": 5326296801,
       "title": "SME-064: Add monitoring alerts and incident lifecycle",
       "url": "https://github.com/neophilism/Services-Marketplace-Engine/pull/69",
       "createdAt": "2026-11-15T19:25:38Z",
-      "updatedAt": "2026-11-15T19:25:38Z",
+      "updatedAt": "2026-11-15T19:27:24Z",
+      "mergedAt": "2026-11-15T19:27:24Z",
+      "closedAt": "2026-11-15T19:27:24Z",
+      "draft": false
+    },
+    {
+      "number": 70,
+      "unitId": "SME-067",
+      "state": "open",
+      "merged": false,
+      "id": 5326320823,
+      "title": "SME-067: Add deployable HTTP API service, Postgres persistence and adapters",
+      "url": "https://github.com/neophilism/Services-Marketplace-Engine/pull/70",
+      "createdAt": "2026-11-15T19:28:23Z",
+      "updatedAt": "2026-11-15T19:28:23Z",
       "mergedAt": null,
       "closedAt": null,
       "draft": false

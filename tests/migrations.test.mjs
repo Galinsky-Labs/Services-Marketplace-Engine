@@ -7,7 +7,7 @@ import {discoverMigrations} from '../scripts/run-migrations.mjs';
 
 test('migration discovery returns ordered reversible pairs', () => {
   const migrations = discoverMigrations();
-  assert.deepEqual(migrations.map(migration => migration.id), ['0001_core']);
+  assert.deepEqual(migrations.map(migration => migration.id), ['0001_core', '0002_platform']);
   assert.match(migrations[0].up, /0001_core\.up\.sql$/);
   assert.match(migrations[0].down, /0001_core\.down\.sql$/);
 });
@@ -37,4 +37,16 @@ test('rollback removes every object introduced by the core migration', () => {
     assert.match(sql, new RegExp('DROP (?:POLICY|TABLE).*' + object));
   }
   assert.match(sql, /DROP SCHEMA marketplace/);
+});
+
+test('platform migration enforces tenant row-level security on documents and reverses cleanly', () => {
+  const up = fs.readFileSync('database/migrations/0002_platform.up.sql', 'utf8');
+  const down = fs.readFileSync('database/migrations/0002_platform.down.sql', 'utf8');
+  for (const table of ['documents', 'document_keys']) {
+    assert.match(up, new RegExp('ALTER TABLE marketplace\\.' + table + ' FORCE ROW LEVEL SECURITY'));
+    assert.match(down, new RegExp('DROP TABLE marketplace\\.' + table));
+  }
+  for (const table of ['roles', 'api_keys', 'audit_events']) assert.match(down, new RegExp('DROP TABLE marketplace\\.' + table));
+  assert.match(up, /secret_hash text NOT NULL CHECK \(secret_hash ~ '\^\[0-9a-f\]\{64\}\$'\)/);
+  assert.match(down, /DELETE FROM marketplace\.schema_migrations WHERE id = '0002_platform'/);
 });
