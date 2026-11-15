@@ -98,3 +98,4 @@ export * from './assistant-registry.js';
 export * from './research-sourcing.js';
 export * from './retrieval-grounding.js';
 export * from './conversational-draft.js';
+export * from './turn-director.js';
