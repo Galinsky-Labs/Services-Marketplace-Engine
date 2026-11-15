@@ -5,7 +5,7 @@
   "roadmapVersion": 1,
   "planVerified": true,
   "plannedPrCount": 67,
-  "observedAt": "2026-11-04T23:31:00Z",
+  "observedAt": "2026-11-15T12:00:00Z",
   "sourceFiles": [
     "docs/DEVELOPMENT_PLAN.md",
     "AGENTS.md",
@@ -471,11 +471,16 @@
         "Automated tests and acceptance evidence",
         "Regression tests"
       ],
-      "contributingPrs": [
-        16
-      ],
+      "contributingPrs": [],
       "externalDependencies": [],
-      "externalPrerequisites": []
+      "externalPrerequisites": [],
+      "status": "merged",
+      "mergedCommit": "4e3c849b1e1e4b84fc20cf8ac744cfa7e96ac349",
+      "acceptanceEvidence": [
+        "Exact-head Registry validation push run 39843668966 and pull-request run 39843673343 passed for 6c97c82c5184de6f14b34f38907f6aed0f78e3dd.",
+        "Merged-main Registry validation run 39843947103 passed for 4e3c849b1e1e4b84fc20cf8ac744cfa7e96ac349.",
+        "https://github.com/neophilism/Services-Marketplace-Engine/pull/16"
+      ]
     },
     {
       "id": "SME-016",
@@ -497,11 +502,16 @@
         "Automated tests and acceptance evidence",
         "Regression tests"
       ],
-      "contributingPrs": [
-        17
-      ],
+      "contributingPrs": [],
       "externalDependencies": [],
-      "externalPrerequisites": []
+      "externalPrerequisites": [],
+      "status": "merged",
+      "mergedCommit": "4db2128a3014cdea84573455d6ae19451fab154c",
+      "acceptanceEvidence": [
+        "Exact-head Registry validation push run 39847084718 and pull-request run 39847095595 passed for 2fd5a5b7a2519fb0cba2b82ea315f57ffc14583a.",
+        "Merged-main Registry validation run 39847280763 passed for 4db2128a3014cdea84573455d6ae19451fab154c.",
+        "https://github.com/neophilism/Services-Marketplace-Engine/pull/17"
+      ]
     },
     {
       "id": "SME-017",
