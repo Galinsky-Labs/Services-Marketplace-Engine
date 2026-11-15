@@ -5,7 +5,7 @@
   "roadmapVersion": 1,
   "planVerified": true,
   "plannedPrCount": 67,
-  "observedAt": "2026-11-15T19:15:37Z",
+  "observedAt": "2026-11-15T19:15:54Z",
   "sourceFiles": [
     "docs/DEVELOPMENT_PLAN.md",
     "AGENTS.md",
@@ -1911,7 +1911,9 @@
       "id": "SME-060",
       "title": "Conversational request drafts approvals",
       "origin": "original",
-      "prs": [],
+      "prs": [
+        65
+      ],
       "priority": "P1",
       "phase": "Operations",
       "dependsOn": [
@@ -2925,6 +2927,20 @@
       "updatedAt": "2026-11-15T19:14:07Z",
       "mergedAt": "2026-11-15T19:14:07Z",
       "closedAt": "2026-11-15T19:14:07Z",
+      "draft": false
+    },
+    {
+      "number": 65,
+      "unitId": "SME-060",
+      "state": "open",
+      "merged": false,
+      "id": 5326204246,
+      "title": "SME-060: Add conversational request drafts with customer approval",
+      "url": "https://github.com/neophilism/Services-Marketplace-Engine/pull/65",
+      "createdAt": "2026-11-15T19:15:53Z",
+      "updatedAt": "2026-11-15T19:15:53Z",
+      "mergedAt": null,
+      "closedAt": null,
       "draft": false
     }
   ]
